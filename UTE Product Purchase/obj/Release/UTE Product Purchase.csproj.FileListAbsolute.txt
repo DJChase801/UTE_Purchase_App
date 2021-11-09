@@ -1,0 +1,18 @@
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTE Product Purchase.exe.config
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTE Product Purchase.exe
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTE Product Purchase.pdb
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.AssemblyReference.cache
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE_Product_Purchase.AdminStart.resources
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE_Product_Purchase.MainForm.resources
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE_Product_Purchase.ProductControl.resources
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE_Product_Purchase.ProductsForm.resources
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE_Product_Purchase.Properties.Resources.resources
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE_Product_Purchase.PurchasesForm.resources
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.GenerateResource.cache
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.CoreCompileInputs.cache
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.exe
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.pdb
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTE Product Purchase.exe.manifest
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTE Product Purchase.application
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.exe.manifest
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.application

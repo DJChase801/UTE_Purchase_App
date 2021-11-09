@@ -1,0 +1,4 @@
+HeadPhones|49.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\UTEAPP\IMAGES\HeadPhones.jpg|123
+Nocco Drank|2.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\UTEAPP\IMAGES\Nocco Drank.jpg|111
+Liftie Bites|1.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\UTEAPP\IMAGES\Liftie Bites.jpg|222
+T-Shirt|19.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\UTEAPP\IMAGES\T-Shirt.jpg|333
