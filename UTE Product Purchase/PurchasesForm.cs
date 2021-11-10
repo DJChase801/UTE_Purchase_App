@@ -30,6 +30,7 @@ namespace UTE_Product_Purchase
                     {
                         bool isDone = false;
                         var name = row.Cells[0].Value.ToString().Trim();
+                        var prod = row.Cells[1].Value.ToString(); 
 
                         if (totalGridView.Rows.Count > 1)
                         {
@@ -37,7 +38,7 @@ namespace UTE_Product_Purchase
                             {
                                 if (!totRow.IsNewRow)
                                 {
-                                    if (totRow.Cells[0].Value.ToString().Trim() == name)
+                                    if (totRow.Cells[0].Value.ToString().Trim() == name && totRow.Cells[1].Value.ToString() == prod)
                                     {
                                         isDone = true;
                                     }
@@ -47,20 +48,22 @@ namespace UTE_Product_Purchase
 
                         if (!isDone)
                         {
-                            double total = 0;
+                            int qnty = 0;
                             foreach (DataGridViewRow getRow in purchaseDataGrid.Rows)
                             {
                                 if (!getRow.IsNewRow)
                                 {
-                                    if (getRow.Cells[0].Value.ToString().Trim() == row.Cells[0].Value.ToString().Trim())
+                                    if (getRow.Cells[0].Value.ToString().Trim() == row.Cells[0].Value.ToString().Trim() && 
+                                        getRow.Cells[1].Value.ToString() == row.Cells[1].Value.ToString())
                                     {
-                                        total += Convert.ToDouble(getRow.Cells[2].Value);
+                                        qnty++; 
                                     }
                                 }
                             }
                             DataGridViewRow setRow = (DataGridViewRow)totalGridView.Rows[0].Clone();
                             setRow.Cells[0].Value = name;
-                            setRow.Cells[1].Value = total;
+                            setRow.Cells[1].Value = prod; 
+                            setRow.Cells[2].Value = qnty;
                             totalGridView.Rows.Add(setRow); 
                         }
                     }

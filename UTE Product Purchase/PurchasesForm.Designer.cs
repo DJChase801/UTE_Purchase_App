@@ -40,6 +40,7 @@ namespace UTE_Product_Purchase
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.totalGridView)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +56,7 @@ namespace UTE_Product_Purchase
             this.purchaseDataGrid.Location = new System.Drawing.Point(12, 31);
             this.purchaseDataGrid.Name = "purchaseDataGrid";
             this.purchaseDataGrid.RowHeadersVisible = false;
+            this.purchaseDataGrid.RowHeadersWidth = 51;
             this.purchaseDataGrid.Size = new System.Drawing.Size(776, 276);
             this.purchaseDataGrid.TabIndex = 0;
             // 
@@ -62,24 +64,28 @@ namespace UTE_Product_Purchase
             // 
             this.memName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.memName.HeaderText = "Name";
+            this.memName.MinimumWidth = 6;
             this.memName.Name = "memName";
             // 
             // Product
             // 
             this.Product.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Product.HeaderText = "Product";
+            this.Product.MinimumWidth = 6;
             this.Product.Name = "Product";
             // 
             // Price
             // 
             this.Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             // 
             // Date
             // 
             this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 6;
             this.Date.Name = "Date";
             // 
             // clearDataBtn
@@ -106,10 +112,12 @@ namespace UTE_Product_Purchase
             this.totalGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.totalGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
+            this.dataGridViewTextBoxColumn2,
+            this.quantityCol});
             this.totalGridView.Location = new System.Drawing.Point(13, 334);
             this.totalGridView.Name = "totalGridView";
             this.totalGridView.RowHeadersVisible = false;
+            this.totalGridView.RowHeadersWidth = 51;
             this.totalGridView.Size = new System.Drawing.Size(776, 301);
             this.totalGridView.TabIndex = 21;
             // 
@@ -118,7 +126,7 @@ namespace UTE_Product_Purchase
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(84, 15);
             this.label1.TabIndex = 22;
             this.label1.Text = "All Purchases:";
             // 
@@ -127,7 +135,7 @@ namespace UTE_Product_Purchase
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 318);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(43, 15);
             this.label2.TabIndex = 23;
             this.label2.Text = "Totals:";
             // 
@@ -135,13 +143,22 @@ namespace UTE_Product_Purchase
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Total";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Product";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // quantityCol
+            // 
+            this.quantityCol.HeaderText = "Quantity";
+            this.quantityCol.MinimumWidth = 6;
+            this.quantityCol.Name = "quantityCol";
+            this.quantityCol.Width = 125;
             // 
             // PurchasesForm
             // 
@@ -176,5 +193,6 @@ namespace UTE_Product_Purchase
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityCol;
     }
 }
