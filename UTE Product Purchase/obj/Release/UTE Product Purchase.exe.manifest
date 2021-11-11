@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UTE Product Purchase.exe" size="176072">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UTE Product Purchase.exe" size="176584">
       <assemblyIdentity name="UTE Product Purchase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rz8PDa+tW2lF7JHZW63qXE2lbudOtCFgHQyfoWIffh0=</dsig:DigestValue>
+        <dsig:DigestValue>+msFviSxqczpAtzmTjM+xwLe1f8Xt10/sSsp3QZJnQI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

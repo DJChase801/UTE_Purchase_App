@@ -142,7 +142,7 @@ namespace UTE_Product_Purchase
             }
             else
             {
-                MessageBox.Show("You must select a product to add to the cart.");
+                MessageBox.Show("You must select a product to add to the cart. If scanned, barcode may be unavailable in program.");
             }
         }
 
@@ -260,6 +260,12 @@ namespace UTE_Product_Purchase
                     prodPic.Load(Product.ImgString);
                     prodNameLbl.Text = "Name: " + Product.Name;
                     prodPriceLbl.Text = "Price: $" + Product.Price.ToString();
+                }
+                else
+                {
+                    prodCmbox.Text = "Select..."; 
+                    prodNameLbl.Text = "Name: ";
+                    prodPriceLbl.Text = "Price: ";
                 }
             }
             catch

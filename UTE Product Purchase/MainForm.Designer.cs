@@ -49,14 +49,16 @@ namespace UTE_Product_Purchase
             this.scanLabel = new System.Windows.Forms.Label();
             this.scanTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.prodPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // memNameTB
             // 
             this.memNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memNameTB.Location = new System.Drawing.Point(11, 106);
+            this.memNameTB.Location = new System.Drawing.Point(18, 103);
             this.memNameTB.Margin = new System.Windows.Forms.Padding(2);
             this.memNameTB.Name = "memNameTB";
             this.memNameTB.Size = new System.Drawing.Size(274, 26);
@@ -67,7 +69,7 @@ namespace UTE_Product_Purchase
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.nameLabel.Location = new System.Drawing.Point(11, 83);
+            this.nameLabel.Location = new System.Drawing.Point(18, 80);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(117, 20);
@@ -78,7 +80,7 @@ namespace UTE_Product_Purchase
             // 
             this.prodCmbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodCmbox.FormattingEnabled = true;
-            this.prodCmbox.Location = new System.Drawing.Point(11, 154);
+            this.prodCmbox.Location = new System.Drawing.Point(8, 38);
             this.prodCmbox.Margin = new System.Windows.Forms.Padding(2);
             this.prodCmbox.Name = "prodCmbox";
             this.prodCmbox.Size = new System.Drawing.Size(274, 28);
@@ -96,7 +98,7 @@ namespace UTE_Product_Purchase
             this.acceptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.acceptBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acceptBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.acceptBtn.Location = new System.Drawing.Point(347, 466);
+            this.acceptBtn.Location = new System.Drawing.Point(336, 500);
             this.acceptBtn.Margin = new System.Windows.Forms.Padding(2);
             this.acceptBtn.Name = "acceptBtn";
             this.acceptBtn.Size = new System.Drawing.Size(70, 26);
@@ -116,7 +118,7 @@ namespace UTE_Product_Purchase
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.cancelBtn.Location = new System.Drawing.Point(421, 466);
+            this.cancelBtn.Location = new System.Drawing.Point(410, 500);
             this.cancelBtn.Margin = new System.Windows.Forms.Padding(2);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(70, 26);
@@ -136,7 +138,7 @@ namespace UTE_Product_Purchase
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(207, 320);
+            this.button3.Location = new System.Drawing.Point(202, 151);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 26);
@@ -150,7 +152,7 @@ namespace UTE_Product_Purchase
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(298, 83);
+            this.label1.Location = new System.Drawing.Point(335, 80);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 20);
@@ -162,7 +164,7 @@ namespace UTE_Product_Purchase
             this.prodPriceLbl.AutoSize = true;
             this.prodPriceLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodPriceLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.prodPriceLbl.Location = new System.Drawing.Point(11, 469);
+            this.prodPriceLbl.Location = new System.Drawing.Point(6, 300);
             this.prodPriceLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.prodPriceLbl.Name = "prodPriceLbl";
             this.prodPriceLbl.Size = new System.Drawing.Size(48, 20);
@@ -174,7 +176,7 @@ namespace UTE_Product_Purchase
             this.prodNameLbl.AutoSize = true;
             this.prodNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodNameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.prodNameLbl.Location = new System.Drawing.Point(11, 440);
+            this.prodNameLbl.Location = new System.Drawing.Point(6, 271);
             this.prodNameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.prodNameLbl.Name = "prodNameLbl";
             this.prodNameLbl.Size = new System.Drawing.Size(55, 20);
@@ -192,7 +194,7 @@ namespace UTE_Product_Purchase
             this.adminBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.adminBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.adminBtn.Location = new System.Drawing.Point(480, 9);
+            this.adminBtn.Location = new System.Drawing.Point(525, 11);
             this.adminBtn.Margin = new System.Windows.Forms.Padding(2);
             this.adminBtn.Name = "adminBtn";
             this.adminBtn.Size = new System.Drawing.Size(85, 26);
@@ -212,7 +214,7 @@ namespace UTE_Product_Purchase
             this.removeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.removeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.removeBtn.Location = new System.Drawing.Point(495, 466);
+            this.removeBtn.Location = new System.Drawing.Point(484, 500);
             this.removeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(70, 26);
@@ -238,7 +240,7 @@ namespace UTE_Product_Purchase
             this.prodPic.BackColor = System.Drawing.Color.White;
             this.prodPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prodPic.InitialImage = global::UTE_Product_Purchase.Properties.Resources.Site_Logo;
-            this.prodPic.Location = new System.Drawing.Point(13, 243);
+            this.prodPic.Location = new System.Drawing.Point(8, 74);
             this.prodPic.Margin = new System.Windows.Forms.Padding(6);
             this.prodPic.Name = "prodPic";
             this.prodPic.Size = new System.Drawing.Size(189, 191);
@@ -262,10 +264,10 @@ namespace UTE_Product_Purchase
             this.cartList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cartList.FormattingEnabled = true;
             this.cartList.ItemHeight = 20;
-            this.cartList.Location = new System.Drawing.Point(302, 106);
+            this.cartList.Location = new System.Drawing.Point(339, 103);
             this.cartList.Name = "cartList";
             this.cartList.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cartList.Size = new System.Drawing.Size(264, 324);
+            this.cartList.Size = new System.Drawing.Size(264, 364);
             this.cartList.TabIndex = 17;
             // 
             // totalLbl
@@ -273,7 +275,7 @@ namespace UTE_Product_Purchase
             this.totalLbl.AutoSize = true;
             this.totalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.totalLbl.Location = new System.Drawing.Point(204, 469);
+            this.totalLbl.Location = new System.Drawing.Point(335, 473);
             this.totalLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalLbl.Name = "totalLbl";
             this.totalLbl.Size = new System.Drawing.Size(48, 20);
@@ -285,17 +287,17 @@ namespace UTE_Product_Purchase
             this.scanLabel.AutoSize = true;
             this.scanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scanLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.scanLabel.Location = new System.Drawing.Point(8, 183);
+            this.scanLabel.Location = new System.Drawing.Point(14, 473);
             this.scanLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scanLabel.Name = "scanLabel";
-            this.scanLabel.Size = new System.Drawing.Size(109, 20);
+            this.scanLabel.Size = new System.Drawing.Size(192, 20);
             this.scanLabel.TabIndex = 20;
-            this.scanLabel.Text = "Scan Product:";
+            this.scanLabel.Text = "Quick Scan + Add To Cart";
             // 
             // scanTextBox
             // 
             this.scanTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scanTextBox.Location = new System.Drawing.Point(11, 206);
+            this.scanTextBox.Location = new System.Drawing.Point(17, 496);
             this.scanTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.scanTextBox.Name = "scanTextBox";
             this.scanTextBox.Size = new System.Drawing.Size(275, 26);
@@ -307,20 +309,35 @@ namespace UTE_Product_Purchase
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(8, 132);
+            this.label2.Location = new System.Drawing.Point(5, 16);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 20);
             this.label2.TabIndex = 22;
             this.label2.Text = "Select Product:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.prodPic);
+            this.groupBox1.Controls.Add(this.prodCmbox);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.prodPriceLbl);
+            this.groupBox1.Controls.Add(this.prodNameLbl);
+            this.groupBox1.Location = new System.Drawing.Point(10, 135);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(302, 325);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(588, 507);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(621, 540);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.scanLabel);
             this.Controls.Add(this.scanTextBox);
             this.Controls.Add(this.totalLbl);
@@ -328,16 +345,11 @@ namespace UTE_Product_Purchase
             this.Controls.Add(this.label5);
             this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.adminBtn);
-            this.Controls.Add(this.prodNameLbl);
-            this.Controls.Add(this.prodPriceLbl);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.acceptBtn);
-            this.Controls.Add(this.prodCmbox);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.memNameTB);
-            this.Controls.Add(this.prodPic);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -346,6 +358,8 @@ namespace UTE_Product_Purchase
             this.Text = "UTE";
             ((System.ComponentModel.ISupportInitialize)(this.prodPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,6 +386,7 @@ namespace UTE_Product_Purchase
         private System.Windows.Forms.Label scanLabel;
         private System.Windows.Forms.TextBox scanTextBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
