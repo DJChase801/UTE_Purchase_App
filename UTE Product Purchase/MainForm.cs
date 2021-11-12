@@ -18,7 +18,29 @@ namespace UTE_Product_Purchase
         public MainForm()
         {
             InitializeComponent();
-            LoadValues(); 
+            SetUpDataBase(); 
+            LoadValues();
+        }
+        public string  AppDB { get; set; }
+        private void SetUpDataBase()
+        {
+
+            string fileName = "UteDataBase.db";
+            string sourcePath = @".\";
+            string targetPath = @"C:\UTE APP\Back Up Folder";
+
+            string sourceFile = Path.Combine(sourcePath, fileName);
+            string destFile = Path.Combine(targetPath, fileName);
+
+            Directory.CreateDirectory(targetPath);
+
+            // To copy a file to another location and
+            // overwrite the destination file if it already exists.
+            if (!File.Exists(destFile))
+            {
+                File.Copy(sourceFile, destFile, true);
+            }
+            AppDB = destFile; 
         }
 
         public List<ProductModel> Products { get; set; }
@@ -27,29 +49,9 @@ namespace UTE_Product_Purchase
         {
             prodPic.Image = null;
             prodCmbox.Text = "Select...";
-            LoadProducts(); 
+            Products = SqliteDataAccess.LoadProducts();
             LoadProductDropDown(); 
             //Load More info when the time comes such as all members in the list. 
-        }
-
-        private void LoadProducts()
-        {
-            string textFile = GetTextFile();
-            try
-            {
-                string[] lines = File.ReadAllLines(textFile);
-                Products = new List<ProductModel>();
-                foreach (string line in lines)
-                {
-                    string[] segments = line.Split('|');
-                    ProductModel prod = new ProductModel(segments[0], Convert.ToDouble(segments[1]), segments[2], segments[3]);
-                    Products.Add(prod);
-                }
-            }
-            catch
-            {
-
-            }
         }
 
         private void LoadProductDropDown()
@@ -60,46 +62,9 @@ namespace UTE_Product_Purchase
 
                 foreach (ProductModel prod in Products)
                 {
-                    prodCmbox.Items.Add(prod.Name);
-                }
-
-                string folderName = Application.StartupPath.ToString();
-                folderName = Path.Combine(folderName, "UTEAPP\\IMAGES\\");
-                bool delete = true;
-                foreach (string fileName in Directory.GetFiles(folderName))
-                {
-                    foreach (var e in Products)
-                    {
-                        if (e.ImgString == fileName)
-                        {
-                            delete = false;
-                        }
-                    }
-                    if (delete)
-                    {
-                        try
-                        {
-                            File.Delete(fileName);
-                        }
-                        catch
-                        {
-
-                        }
-                    }
-                    delete = true;
+                    prodCmbox.Items.Add(prod.ProductName);
                 }
             }
-        }
-
-        private string GetTextFile()
-        {
-            string folderName = Application.StartupPath.ToString();
-            string pathString = Path.Combine(folderName, "UTEAPP");
-            Directory.CreateDirectory(pathString);
-            string fileName = "PRODUCTS.txt";
-            pathString = Path.Combine(pathString, fileName);
-
-            return pathString; 
         }
 
         private void prodCmbox_SelectedValueChanged(object sender, EventArgs e)
@@ -110,21 +75,10 @@ namespace UTE_Product_Purchase
 
         private void StageFormNewProduct(string name)
         {
-            Product = Products.Find(e => e.Name == name);
-            prodPic.Image = null; 
-            try
-            {
-                if(Product != null)
-                {
-                    prodPic.Load(Product.ImgString);
-                }
-            }
-            catch
-            {
-
-            }
-            prodNameLbl.Text = "Name: " + Product.Name;
-            prodPriceLbl.Text = "Price: $" + Product.Price.ToString(); 
+            Product = Products.Find(e => e.ProductName == name);
+            prodPic.Image = Product.ProductImg; 
+            prodNameLbl.Text = "Name: " + Product.ProductName;
+            prodPriceLbl.Text = "Price: $" + Product.ProductPrice.ToString(); 
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -136,8 +90,8 @@ namespace UTE_Product_Purchase
         {
             if (Product != null && prodNameLbl.Text != "Name: ")
             {
-                cartList.Items.Add(Product.Name + "............. $" + Product.Price);
-                Total += Product.Price;
+                cartList.Items.Add(Product.ProductName + "............. $" + Product.ProductPrice);
+                Total += Product.ProductPrice;
                 totalLbl.Text = "Total: $" + Total.ToString();
             }
             else
@@ -174,42 +128,40 @@ namespace UTE_Product_Purchase
                 cartList.Items.Remove(cartList.SelectedItem);
             }
         }
-
+        /// <summary>
+        /// Keeps the running total for the application.
+        /// </summary>
         public double Total { get; set; }
+        /// <summary>
+        /// Passes the information to the add purchase method and clears the form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void acceptBtn_Click(object sender, EventArgs e)
         {
             if (ValidateAccept())
             {
-                string folderName = Application.StartupPath.ToString();
-                string pathString = Path.Combine(folderName, "UTEAPP");
-                string backUPString = @"C:\UTE APP\Back Up Folder";
-                string backUpFile = "BackUP.txt"; 
-                Directory.CreateDirectory(pathString);
-                Directory.CreateDirectory(backUPString);
-                string fileName = "DATA.txt";
-                pathString = Path.Combine(pathString, fileName);
-                backUPString = Path.Combine(backUPString, backUpFile); 
-
-                using (StreamWriter writer = new StreamWriter(pathString, append: true))
-                {
-                    foreach (string item in cartList.Items)
-                    {
-                        string[] cartIt = item.Replace(" ", "").Split('$'); 
-                        writer.WriteLine(memNameTB.Text.Trim() + "|" + cartIt[0].Replace(".", "") + "|" + cartIt[1] + "|" + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-                    }
-                }
-                //Writes to the back up text so OS is happy. 
-                using (StreamWriter writer = new StreamWriter(backUPString, append: true))
-                {
-                    foreach (string item in cartList.Items)
-                    {
-                        string[] cartIt = item.Replace(" ", "").Split('$');
-                        writer.WriteLine(memNameTB.Text.Trim() + "|" + cartIt[0].Replace(".", "") + "|" + cartIt[1] + "|" + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-                    }
-                }
+                AddPurchases(cartList.Items); 
 
                 ClearApplication();
                 MessageBox.Show("Success!"); 
+            }
+        }
+        /// <summary>
+        /// Writes the purchase record to the database.
+        /// </summary>
+        /// <param name="items"></param>
+        private void AddPurchases(ListBox.ObjectCollection items)
+        {
+            foreach(string item in items)
+            {
+                string[] cartIt = item.Replace(" ", "").Split('$');
+                PurchaseModel p = new PurchaseModel();
+                p.MemberName = memNameTB.Text.Trim();
+                p.ProductName = cartIt[0].Replace(".", "");
+                p.Date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                SqliteDataAccess.SavePurchase(p); 
             }
         }
 
@@ -262,23 +214,24 @@ namespace UTE_Product_Purchase
             }
         }
 
-        private void ScanFormNewProduct(string sku)
+        private void ScanFormNewProduct(string upc)
         {
-            Product = Products.Find(e => e.Sku == sku);
-            prodPic.Image = null;
+            Product = Products.Find(e => e.ProductUPC == upc);
             try
             {
                 if (Product != null)
                 {
-                    prodPic.Load(Product.ImgString);
-                    prodNameLbl.Text = "Name: " + Product.Name;
-                    prodPriceLbl.Text = "Price: $" + Product.Price.ToString();
+                    prodPic.Image = Product.ProductImg;
+                    prodCmbox.Text = Product.ProductName; 
+                    prodNameLbl.Text = "Name: " + Product.ProductName;
+                    prodPriceLbl.Text = "Price: $" + Product.ProductPrice.ToString();
                 }
                 else
                 {
                     prodCmbox.Text = "Select..."; 
                     prodNameLbl.Text = "Name: ";
                     prodPriceLbl.Text = "Price: ";
+                    prodPic.Image = null;
                 }
             }
             catch

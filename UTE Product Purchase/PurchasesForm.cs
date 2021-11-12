@@ -22,6 +22,7 @@ namespace UTE_Product_Purchase
 
         private void GetTotals()
         {
+            
             if(purchaseDataGrid.Rows.Count > 1)
             {
                 foreach(DataGridViewRow row in purchaseDataGrid.Rows)
@@ -73,22 +74,15 @@ namespace UTE_Product_Purchase
 
         private void GetData()
         {
-            string folderName = Application.StartupPath.ToString();
-            string pathString = Path.Combine(folderName, "UTEAPP");
-            string fileName = "DATA.txt";
-            pathString = Path.Combine(pathString, fileName);
+            List<PurchaseModel> purchases = SqliteDataAccess.LoadPurchases();
             try
             {
-
-                string[] lines = File.ReadAllLines(pathString);
-                foreach (string line in lines)
+                foreach (PurchaseModel purchase in purchases)
                 {
                     DataGridViewRow row = (DataGridViewRow)purchaseDataGrid.Rows[0].Clone();
-                    string[] segments = line.Split('|');
-                    row.Cells[0].Value = segments[0];
-                    row.Cells[1].Value = segments[1];
-                    row.Cells[2].Value = segments[2];
-                    row.Cells[3].Value = segments[3];
+                    row.Cells[0].Value = purchase.MemberName; 
+                    row.Cells[1].Value = purchase.ProductName;
+                    row.Cells[2].Value = purchase.Date;
                     purchaseDataGrid.Rows.Add(row);
                 }
             }
@@ -113,6 +107,36 @@ namespace UTE_Product_Purchase
                 pathString = Path.Combine(pathString, fileName);
                 File.Delete(pathString);
                 Close(); 
+            }
+        }
+        /// <summary>
+        /// Returns all the purchase models from the dates specified on purchase form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GetPurchasesBtn_Click(object sender, EventArgs e)
+        {
+            purchaseDataGrid.Rows.Clear();
+            totalGridView.Rows.Clear(); 
+            string start = startDatePicker.Value.ToString("yyyy-MM-dd"); 
+            string end = endDatePicker.Value.ToString("yyyy-MM-dd");
+           
+            List<PurchaseModel> purchases = SqliteDataAccess.LoadSpecificPurchases(start, end);
+            try
+            {
+                foreach (PurchaseModel purchase in purchases)
+                {
+                    DataGridViewRow row = (DataGridViewRow)purchaseDataGrid.Rows[0].Clone();
+                    row.Cells[0].Value = purchase.MemberName;
+                    row.Cells[1].Value = purchase.ProductName;
+                    row.Cells[2].Value = purchase.Date;
+                    purchaseDataGrid.Rows.Add(row);
+                }
+                GetTotals();
+            }
+            catch
+            {
+                MessageBox.Show("No data to show");
             }
         }
     }

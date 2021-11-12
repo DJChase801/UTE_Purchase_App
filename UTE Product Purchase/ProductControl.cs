@@ -32,6 +32,7 @@ namespace UTE_Product_Purchase
         private void removeBtn_Click(object sender, EventArgs e)
         {
             ControlCollection cntrls = Parent.Controls;
+            SqliteDataAccess.RemoveProduct(prodNameLbl.Text);
             cntrls.Remove(this);
             for (int i = 0; i < cntrls.Count; i++)
             {

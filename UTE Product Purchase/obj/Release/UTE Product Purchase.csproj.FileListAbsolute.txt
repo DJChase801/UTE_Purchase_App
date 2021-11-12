@@ -35,3 +35,9 @@ C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\R
 C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Release\UTE Product Purchase.application
 C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Release\UTE Product Purchase.exe
 C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Release\UTE Product Purchase.pdb
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UteDataBase.db
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\Dapper.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\System.Data.SQLite.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\Dapper.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\System.Data.SQLite.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.CopyComplete

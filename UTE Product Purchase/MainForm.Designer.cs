@@ -88,14 +88,15 @@ namespace UTE_Product_Purchase
             // acceptBtn
             // 
             this.acceptBtn.AutoSize = true;
-            this.acceptBtn.BackColor = System.Drawing.Color.Red;
-            this.acceptBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.acceptBtn.BackColor = System.Drawing.Color.LightGreen;
+            this.acceptBtn.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.acceptBtn.FlatAppearance.BorderSize = 2;
             this.acceptBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.acceptBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.acceptBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.acceptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.acceptBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acceptBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.acceptBtn.ForeColor = System.Drawing.Color.Black;
             this.acceptBtn.Location = new System.Drawing.Point(336, 500);
             this.acceptBtn.Margin = new System.Windows.Forms.Padding(2);
             this.acceptBtn.Name = "acceptBtn";
@@ -285,7 +286,7 @@ namespace UTE_Product_Purchase
             this.scanLabel.AutoSize = true;
             this.scanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scanLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.scanLabel.Location = new System.Drawing.Point(14, 473);
+            this.scanLabel.Location = new System.Drawing.Point(15, 476);
             this.scanLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scanLabel.Name = "scanLabel";
             this.scanLabel.Size = new System.Drawing.Size(192, 20);
@@ -295,7 +296,7 @@ namespace UTE_Product_Purchase
             // scanTextBox
             // 
             this.scanTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scanTextBox.Location = new System.Drawing.Point(17, 496);
+            this.scanTextBox.Location = new System.Drawing.Point(18, 499);
             this.scanTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.scanTextBox.Name = "scanTextBox";
             this.scanTextBox.Size = new System.Drawing.Size(275, 26);

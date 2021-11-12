@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UTE_Product_Purchase
@@ -20,11 +15,20 @@ namespace UTE_Product_Purchase
             MainForm = mf; 
         }
         public MainForm MainForm { get; set; }
+        /// <summary>
+        /// Button on the product form to save the product that is being built
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void addProductBtn_Click(object sender, EventArgs e)
         {
             if (nameInputTb.Text != "" && priceInputTb.Text != "")
             {
                 AddProductControl(nameInputTb.Text, priceInputTb.Text, inputPicBox.Image, upcTextBox.Text);
+                SaveProduct(nameInputTb.Text, priceInputTb.Text, inputPicBox.Image, upcTextBox.Text);
+                MainForm.LoadValues(); 
+
+                //Resets the form. 
                 nameInputTb.Text = "";
                 priceInputTb.Text = "";
                 upcTextBox.Text = ""; 
@@ -35,7 +39,31 @@ namespace UTE_Product_Purchase
                 MessageBox.Show("You must enter a Name and Price");
             }
         }
+        /// <summary>
+        /// Saves a product to the application database. 
+        /// </summary>
+        /// <param name="prodName"></param>
+        /// <param name="prodPrice"></param>
+        /// <param name="prodImg"></param>
+        /// <param name="prodUPC"></param>
+        private void SaveProduct(string prodName, string prodPrice, Image prodImg, string prodUPC)
+        {
+            ProductModel prod = new ProductModel();
+            prod.ProductName = prodName;
+            prod.ProductPrice = Convert.ToDouble(prodPrice.Replace("$", ""));
+            prod.ProductImg = prodImg;
+            prod.ProductUPC = prodUPC;
+            prod.SetByteImg(); 
 
+            SqliteDataAccess.SaveProduct(prod); 
+        }
+        /// <summary>
+        /// Sets the product control in the list of products.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="price"></param>
+        /// <param name="image"></param>
+        /// <param name="upc"></param>
         private void AddProductControl(string name, string price, Image image, string upc)
         {
             ProductControl prod = new ProductControl(name, price, image, upc);
@@ -44,7 +72,11 @@ namespace UTE_Product_Purchase
             prodPanel.Controls.Add(prod);
         }
 
-        public string PicLoc { get; set; }
+        /// <summary>
+        /// Opens a file dialog to select a IMG file for the product being created.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void getImgBtn_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -54,75 +86,34 @@ namespace UTE_Product_Purchase
             {
                 // display image in picture box  
                 inputPicBox.Image = new Bitmap(open.FileName);
-                // image file path  
-                PicLoc = open.FileName;
             }
         }
 
-        private void saveProdBtn_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Loads all the products from the db to controls on the product view form.
+        /// </summary>
+        public void LoadProds()
         {
-            string folderName = Application.StartupPath.ToString();
-            string pathString = Path.Combine(folderName, "UTEAPP");
-            Directory.CreateDirectory(pathString);
-            string fileName = "PRODUCTS.txt";
-            fileName = Path.Combine(pathString, fileName);
-            pathString = Path.Combine(pathString, "IMAGES\\");
-            Directory.CreateDirectory(pathString);
-
-            using (StreamWriter writer = new StreamWriter(fileName, append: false))
+            List<ProductModel> prods = new List<ProductModel>(); 
+            prods = SqliteDataAccess.LoadProducts(); 
+            foreach(ProductModel prod in prods)
             {
-                foreach (ProductControl cntrl in prodPanel.Controls)
-                {
-                    string picName = pathString + cntrl.ProdName + ".jpg";
-                    try
-                    {
-                        if(cntrl.Pic != null)
-                        {
-                            cntrl.Pic.Save(picName);
-                        }
-                    }
-                    catch
-                    {
-
-                    }
-                    writer.WriteLine(cntrl.ProdName + "|" + cntrl.Price + "|" + picName + "|" + cntrl.UPC);
-                }
+                prod.ProductImg = ByteToImage(prod.ProductByteImg); 
+                AddProductControl(prod.ProductName, prod.ProductPrice.ToString(), prod.ProductImg, prod.ProductUPC); 
             }
-
-            MainForm.LoadValues(); 
-            Close();
         }
-        private void LoadProds()
+        /// <summary>
+        /// Reverts the Image that comes out of the database back to Image type.
+        /// </summary>
+        /// <param name="imageBytes"></param>
+        /// <returns></returns>
+        public Image ByteToImage(byte[] imageBytes)
         {
-            try
-            {
-
-                string folderName = Application.StartupPath.ToString();
-                string pathString = Path.Combine(folderName, "UTEAPP");
-                Directory.CreateDirectory(pathString);
-                string fileName = "PRODUCTS.txt";
-                fileName = Path.Combine(pathString, fileName);
-                // Read a text file line by line.  
-                string[] lines = File.ReadAllLines(fileName);
-                Image pic = null;
-                foreach (string line in lines)
-                {
-                    string[] segments = line.Split('|');
-                    try
-                    {
-                        pic = Image.FromFile(segments[2]);
-                    }
-                    catch
-                    {
-                        pic = null;
-                    }
-                    AddProductControl(segments[0], segments[1], pic, segments[3]);
-                }
-            }
-            catch
-            {
-
-            }
+            // Convert byte[] to Image
+            MemoryStream ms = new MemoryStream(imageBytes, 0, imageBytes.Length);
+            ms.Write(imageBytes, 0, imageBytes.Length);
+            Image image = new Bitmap(ms);
+            return image;
         }
     }
 }

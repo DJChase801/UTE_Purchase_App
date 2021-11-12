@@ -1,3 +1,3 @@
-Nocco Tropical |2.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTEAPP\IMAGES\Nocco Tropical .jpg|123456
-Liftie Bites|1.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTEAPP\IMAGES\Liftie Bites.jpg|1234
-T-Shirt|19.99|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTEAPP\IMAGES\T-Shirt.jpg|7777
+Liftie Bites|1.25|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTEAPP\IMAGES\Liftie Bites.jpg|1111
+Nocco Tropical|3.00|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTEAPP\IMAGES\Nocco Tropical.jpg|2222
+T-Shirt|30.00|C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\UTEAPP\IMAGES\T-Shirt.jpg|3333
