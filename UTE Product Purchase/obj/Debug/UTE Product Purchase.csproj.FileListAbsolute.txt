@@ -12,3 +12,22 @@ C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.ProductControl.resources
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.ProductsForm.resources
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.PurchasesForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\bin\Debug\UTE Product Purchase.exe.config
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\bin\Debug\UTE Product Purchase.exe.manifest
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\bin\Debug\UTE Product Purchase.application
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\bin\Debug\UTE Product Purchase.exe
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\bin\Debug\UTE Product Purchase.pdb
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.AssemblyReference.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.AdminStart.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.MainForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.ProductControl.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.ProductsForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.Properties.Resources.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.PurchasesForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.GenerateResource.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.CoreCompileInputs.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.exe.manifest
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.application
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.exe
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE1.0.0.2\UTE Product Purchase\obj\Debug\UTE Product Purchase.pdb

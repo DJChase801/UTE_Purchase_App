@@ -49,10 +49,8 @@ namespace UTE_Product_Purchase
             this.scanLabel = new System.Windows.Forms.Label();
             this.scanTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.prodPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // memNameTB
@@ -80,7 +78,7 @@ namespace UTE_Product_Purchase
             // 
             this.prodCmbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodCmbox.FormattingEnabled = true;
-            this.prodCmbox.Location = new System.Drawing.Point(8, 38);
+            this.prodCmbox.Location = new System.Drawing.Point(18, 166);
             this.prodCmbox.Margin = new System.Windows.Forms.Padding(2);
             this.prodCmbox.Name = "prodCmbox";
             this.prodCmbox.Size = new System.Drawing.Size(274, 28);
@@ -138,7 +136,7 @@ namespace UTE_Product_Purchase
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(202, 151);
+            this.button3.Location = new System.Drawing.Point(212, 279);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 26);
@@ -164,7 +162,7 @@ namespace UTE_Product_Purchase
             this.prodPriceLbl.AutoSize = true;
             this.prodPriceLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodPriceLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.prodPriceLbl.Location = new System.Drawing.Point(6, 300);
+            this.prodPriceLbl.Location = new System.Drawing.Point(16, 428);
             this.prodPriceLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.prodPriceLbl.Name = "prodPriceLbl";
             this.prodPriceLbl.Size = new System.Drawing.Size(48, 20);
@@ -176,7 +174,7 @@ namespace UTE_Product_Purchase
             this.prodNameLbl.AutoSize = true;
             this.prodNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodNameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.prodNameLbl.Location = new System.Drawing.Point(6, 271);
+            this.prodNameLbl.Location = new System.Drawing.Point(16, 399);
             this.prodNameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.prodNameLbl.Name = "prodNameLbl";
             this.prodNameLbl.Size = new System.Drawing.Size(55, 20);
@@ -240,7 +238,7 @@ namespace UTE_Product_Purchase
             this.prodPic.BackColor = System.Drawing.Color.White;
             this.prodPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prodPic.InitialImage = global::UTE_Product_Purchase.Properties.Resources.Site_Logo;
-            this.prodPic.Location = new System.Drawing.Point(8, 74);
+            this.prodPic.Location = new System.Drawing.Point(18, 202);
             this.prodPic.Margin = new System.Windows.Forms.Padding(6);
             this.prodPic.Name = "prodPic";
             this.prodPic.Size = new System.Drawing.Size(189, 191);
@@ -309,27 +307,12 @@ namespace UTE_Product_Purchase
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(5, 16);
+            this.label2.Location = new System.Drawing.Point(15, 144);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 20);
             this.label2.TabIndex = 22;
             this.label2.Text = "Select Product:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.prodPic);
-            this.groupBox1.Controls.Add(this.prodCmbox);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.prodPriceLbl);
-            this.groupBox1.Controls.Add(this.prodNameLbl);
-            this.groupBox1.Location = new System.Drawing.Point(10, 135);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 325);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
             // 
             // MainForm
             // 
@@ -337,10 +320,15 @@ namespace UTE_Product_Purchase
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(621, 540);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.prodPic);
+            this.Controls.Add(this.prodCmbox);
             this.Controls.Add(this.scanLabel);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.scanTextBox);
+            this.Controls.Add(this.prodPriceLbl);
             this.Controls.Add(this.totalLbl);
+            this.Controls.Add(this.prodNameLbl);
             this.Controls.Add(this.cartList);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.removeBtn);
@@ -358,8 +346,6 @@ namespace UTE_Product_Purchase
             this.Text = "UTE";
             ((System.ComponentModel.ISupportInitialize)(this.prodPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,7 +372,6 @@ namespace UTE_Product_Purchase
         private System.Windows.Forms.Label scanLabel;
         private System.Windows.Forms.TextBox scanTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

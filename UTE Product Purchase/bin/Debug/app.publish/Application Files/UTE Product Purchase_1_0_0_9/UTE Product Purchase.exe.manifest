@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="UTE Product Purchase.exe" version="1.0.0.9" publicKeyToken="192ffdf1e2b02ec0" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="site_logo_vPt_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="UTE Product Purchase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="UTE Product Purchase.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UTE Product Purchase.exe" size="178632">
+      <assemblyIdentity name="UTE Product Purchase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UaOF0HUJcG63cnAeow7bDmQSETE5AM9UTZI+Nj36YrI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="site_logo_vPt_icon.ico" size="27198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x/aPwWLyzq/uTHPUEUWjv7g+i4R865XNqa2Nb4IA7cI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UTE Product Purchase.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DANS-LAPTOP\danch" issuerKeyHash="07e9500b2dc50fe3d3e3b4915643dd19a8719070" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>pqKwd9gmpZqWr5TjkLGEXQCU+ZDnxs4AhkaM9KNjo54=</DigestValue></Reference></SignedInfo><SignatureValue>CEfeByika8ZV6YWAWibHt0uHETp61aUscxwcIR/KsnXywG6uTOVStE4oLn7rMhz3CTvQkObidpAyDCw2VMqrmLokrd/UMPi6DnevJpoBz2cHbCp8HgT9lHNjPD0ccGM2mgc/yOEs8Piy57j8hCB4lGuIko/cGss0+Rw8L6mMVJI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3DKy4n37xKBfJSJvz5++d+mQG55HZZiyjsAe0dmVzSiSgiKOKNk6V4cVO66BICbxWVjAGxtaAkD1b8TxTjnthB90WnT6cr33xjTpv8SW+jRM9MZwWIS3PyqVAaf6Cw76oiEAUbvev+LW0m+UT60hdLivlJPS+kg+qf0Oe916Wfk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9ea363a3f48c468600cec6e790f994005d84b190e394af969aa526d877b0a2a6" Description="" Url=""><as:assemblyIdentity name="UTE Product Purchase.exe" version="1.0.0.9" publicKeyToken="192ffdf1e2b02ec0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DANS-LAPTOP\danch</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ywKexbuGUUlL/NUHiSk6vxxHump5zadh7L+xJKenAvk=</DigestValue></Reference></SignedInfo><SignatureValue>hKZiJ779uIXp1HvLTLdqvzyO/4I33GyqfW4+tS8RDrE3ccPj+t3xWhNy2UPHLrcLwgh1LqastM1wTDz49w/m/0CIWMidqLtt0tm6BvkTH95Jc7ea6XNwOaWYpY6TUt1+BGCnX5DoRL1iy6PKI4zzJf9hW00iog/6yGGYhl3Sii4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3DKy4n37xKBfJSJvz5++d+mQG55HZZiyjsAe0dmVzSiSgiKOKNk6V4cVO66BICbxWVjAGxtaAkD1b8TxTjnthB90WnT6cr33xjTpv8SW+jRM9MZwWIS3PyqVAaf6Cw76oiEAUbvev+LW0m+UT60hdLivlJPS+kg+qf0Oe916Wfk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQQF3RmfW9nZ5OPmamKMXUhDANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIARABBAE4AUwAtAEwAQQBQAFQATwBQAFwAZABhAG4AYwBoMB4XDTIxMTEwOTE4NTkxMloXDTIyMTExMDAwNTkxMlowLTErMCkGA1UEAx4iAEQAQQBOAFMALQBMAEEAUABUAE8AUABcAGQAYQBuAGMAaDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3DKy4n37xKBfJSJvz5++d+mQG55HZZiyjsAe0dmVzSiSgiKOKNk6V4cVO66BICbxWVjAGxtaAkD1b8TxTjnthB90WnT6cr33xjTpv8SW+jRM9MZwWIS3PyqVAaf6Cw76oiEAUbvev+LW0m+UT60hdLivlJPS+kg+qf0Oe916WfkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAC+63vqeSNHu/yL+YIldHbolOwjTAD7UtMvD5/AXA/oFgtlhmebhJIzydwxRkhk81eVGLOku/BVCDQtetOISS5MWIEjb2JvexqWDbd2lsr/kxZdN4cHc19197KV1t96DsigHvpaftH4N3ZvyqtmYNDweMyjKJDtfsyg9OIAkRIIQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

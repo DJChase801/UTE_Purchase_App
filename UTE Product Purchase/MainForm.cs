@@ -182,15 +182,28 @@ namespace UTE_Product_Purchase
             {
                 string folderName = Application.StartupPath.ToString();
                 string pathString = Path.Combine(folderName, "UTEAPP");
+                string backUPString = @"C:\UTE APP\Back Up Folder";
+                string backUpFile = "BackUP.txt"; 
                 Directory.CreateDirectory(pathString);
+                Directory.CreateDirectory(backUPString);
                 string fileName = "DATA.txt";
                 pathString = Path.Combine(pathString, fileName);
+                backUPString = Path.Combine(backUPString, backUpFile); 
 
                 using (StreamWriter writer = new StreamWriter(pathString, append: true))
                 {
                     foreach (string item in cartList.Items)
                     {
                         string[] cartIt = item.Replace(" ", "").Split('$'); 
+                        writer.WriteLine(memNameTB.Text.Trim() + "|" + cartIt[0].Replace(".", "") + "|" + cartIt[1] + "|" + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                    }
+                }
+                //Writes to the back up text so OS is happy. 
+                using (StreamWriter writer = new StreamWriter(backUPString, append: true))
+                {
+                    foreach (string item in cartList.Items)
+                    {
+                        string[] cartIt = item.Replace(" ", "").Split('$');
                         writer.WriteLine(memNameTB.Text.Trim() + "|" + cartIt[0].Replace(".", "") + "|" + cartIt[1] + "|" + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
                     }
                 }
