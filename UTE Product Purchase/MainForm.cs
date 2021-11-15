@@ -78,7 +78,7 @@ namespace UTE_Product_Purchase
             Product = Products.Find(e => e.ProductName == name);
             prodPic.Image = Product.ProductImg; 
             prodNameLbl.Text = "Name: " + Product.ProductName;
-            prodPriceLbl.Text = "Price: $" + Product.ProductPrice.ToString(); 
+            prodPriceLbl.Text = "Price: $" + Product.ProductPrice.ToString("##.00"); 
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace UTE_Product_Purchase
             {
                 cartList.Items.Add(Product.ProductName + "............. $" + Product.ProductPrice);
                 Total += Product.ProductPrice;
-                totalLbl.Text = "Total: $" + Total.ToString();
+                totalLbl.Text = "Total: $" + Total.ToString("##.00");
             }
             else
             {
@@ -181,7 +181,7 @@ namespace UTE_Product_Purchase
 
             if(error == "Error:\n")
             {
-                DialogResult answer = MessageBox.Show("Are you, " + memNameTB.Text +  " sure you want to commit these charges to your membership fee?", "Check Out", MessageBoxButtons.YesNo);
+                DialogResult answer = MessageBox.Show("Do you, " + memNameTB.Text + ", agree to the total charges of $" + Total.ToString("##.00"), "Check Out", MessageBoxButtons.YesNo);
                 if (answer == DialogResult.No)
                 {
                     return false;

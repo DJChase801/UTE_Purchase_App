@@ -92,12 +92,12 @@ namespace UTE_Product_Purchase
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                var outputs = cnn.Query<PurchaseModel>("Select * from Purchase " +
-                    "WHERE Purchase.Date > dateTime(" + start +") "
+                var outputs = cnn.Query<PurchaseModel>("Select * from Purchase"
                     , new DynamicParameters());
 
                 outputs = (from outRecs in outputs
                            where DateTime.Parse(outRecs.Date) <= DateTime.Parse(end).AddDays(1)
+                           && DateTime.Parse(outRecs.Date) >= DateTime.Parse(start)
                            select outRecs).ToList();
 
 
