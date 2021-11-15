@@ -24,8 +24,8 @@ namespace UTE_Product_Purchase
         {
             if (nameInputTb.Text != "" && priceInputTb.Text != "")
             {
-                AddProductControl(nameInputTb.Text, priceInputTb.Text, inputPicBox.Image, upcTextBox.Text);
-                SaveProduct(nameInputTb.Text, priceInputTb.Text, inputPicBox.Image, upcTextBox.Text);
+                AddProductControl(nameInputTb.Text, priceInputTb.Text.Replace("$", ""), inputPicBox.Image, upcTextBox.Text);
+                SaveProduct(nameInputTb.Text, priceInputTb.Text.Replace("$", ""), inputPicBox.Image, upcTextBox.Text);
                 MainForm.LoadValues(); 
 
                 //Resets the form. 

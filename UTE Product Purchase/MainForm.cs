@@ -90,7 +90,7 @@ namespace UTE_Product_Purchase
         {
             if (Product != null && prodNameLbl.Text != "Name: ")
             {
-                cartList.Items.Add(Product.ProductName + "............. $" + Product.ProductPrice);
+                cartList.Items.Add(Product.ProductName + "................ $" + Product.ProductPrice.ToString("##.00"));
                 Total += Product.ProductPrice;
                 totalLbl.Text = "Total: $" + Total.ToString("##.00");
             }
