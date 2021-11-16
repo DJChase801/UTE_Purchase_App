@@ -41,3 +41,21 @@ C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE Product Purchase.exe.manifest
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE Product Purchase.application
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.CopyComplete
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\obj\Debug\UTE Product Purchase.TrustInfo.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\EntityFramework.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Buffers.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Memory.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\EntityFramework.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Buffers.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Memory.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

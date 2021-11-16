@@ -18,43 +18,57 @@ namespace UTE_Product_Purchase
         public MainForm()
         {
             InitializeComponent();
-            SetUpDataBase(); 
+            SetUpDataBase();
             LoadValues();
         }
         public string  AppDB { get; set; }
         private void SetUpDataBase()
         {
-
-            string fileName = "UteDataBase.db";
-            string sourcePath = @".\";
-            string targetPath = @"C:\UTE APP\Back Up Folder";
-
-            string sourceFile = Path.Combine(sourcePath, fileName);
-            string destFile = Path.Combine(targetPath, fileName);
-
-            Directory.CreateDirectory(targetPath);
-
-            // To copy a file to another location and
-            // overwrite the destination file if it already exists.
-            if (!File.Exists(destFile))
+            try
             {
-                File.Copy(sourceFile, destFile, true);
+
+                string fileName = "UteDataBase.db";
+                string sourcePath = @".\";
+                string targetPath = @"C:\UTE APP\Back Up Folder";
+
+                string sourceFile = Path.Combine(sourcePath, fileName);
+                string destFile = Path.Combine(targetPath, fileName);
+
+                Directory.CreateDirectory(targetPath);
+
+                // To copy a file to another location and
+                // overwrite the destination file if it already exists.
+                if (!File.Exists(destFile))
+                {
+                    File.Copy(sourceFile, destFile, true);
+                }
+                AppDB = destFile;
             }
-            AppDB = destFile; 
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message); 
+            }
         }
 
         public List<ProductModel> Products { get; set; }
         public ProductModel Product { get; set; }
         public void LoadValues()
         {
-            prodPic.Image = null;
-            prodCmbox.Text = "Select...";
-            Products = SqliteDataAccess.LoadProducts();
-            LoadProductDropDown(); 
-            //Load More info when the time comes such as all members in the list. 
+            try
+            {
+                prodPic.Image = null;
+                prodCmbox.Text = "Select...";
+                Products = SqliteDataAccess.LoadProducts();
+                LoadProductDropDown();
+                //Load More info when the time comes such as all members in the list. 
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message); 
+            }
         }
 
-        private void LoadProductDropDown()
+        public void LoadProductDropDown()
         {
             prodCmbox.Items.Clear();
             if (Products != null)

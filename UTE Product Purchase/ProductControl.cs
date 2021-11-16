@@ -23,12 +23,13 @@ namespace UTE_Product_Purchase
             ProdName = name;
             Price = price;
             Pic = pic;
-            UPC = upc; 
+            UPC = upc;
         }
         public string ProdName { get; set; }
         public string Price { get; set; }
         public Image Pic { get; set; }
         public string UPC { get; set; }
+        public ProductsForm ProdForm { get; set; }
         private void removeBtn_Click(object sender, EventArgs e)
         {
             ControlCollection cntrls = Parent.Controls;

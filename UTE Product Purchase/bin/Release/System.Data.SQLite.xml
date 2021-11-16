@@ -3999,18 +3999,6 @@
             The database filename minus path and extension
             </summary>
         </member>
-        <member name="F:System.Data.SQLite.SQLiteConnection._password">
-            <summary>
-            Temporary password storage, emptied after the database has been opened
-            </summary>
-        </member>
-        <member name="F:System.Data.SQLite.SQLiteConnection._passwordWasText">
-            <summary>
-            This will be non-zero if the "TextPassword" connection string property
-            was used.  When this value is non-zero, <see cref="M:System.Data.SQLite.SQLiteConnection.ChangePassword(System.Byte[])" />
-            will retain treatment of the password as a NUL-terminated text string.
-            </summary>
-        </member>
         <member name="F:System.Data.SQLite.SQLiteConnection._baseSchemaName">
             <summary>
             The "stub" (i.e. placeholder) base schema name to use when returning
@@ -4462,39 +4450,6 @@
             <returns>
             The list of key/value pairs corresponding to the parameters specified
             within the connection string.
-            </returns>
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteConnection.EscapeForConnectionString(System.String,System.Boolean)">
-            <summary>
-            Attempts to escape the specified connection string property name or
-            value in a way that is compatible with the connection string parser.
-            </summary>
-            <param name="value">
-            The connection string property name or value to escape.
-            </param>
-            <param name="allowEquals">
-            Non-zero if the equals sign is permitted in the string.  If this is
-            zero and the string contains an equals sign, an exception will be
-            thrown.
-            </param>
-            <returns>
-            The original string, with all special characters escaped.  If the
-            original string contains equals signs, they will not be escaped.
-            Instead, they will be preserved verbatim.
-            </returns>
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteConnection.BuildConnectionString(System.Collections.Generic.SortedList{System.String,System.String})">
-            <summary>
-            Builds a connection string from a list of key/value pairs.
-            </summary>
-            <param name="opts">
-            The list of key/value pairs corresponding to the parameters to be
-            specified within the connection string.
-            </param>
-            <returns>
-            The connection string.  Depending on how the connection string was
-            originally parsed, the returned connection string value may not be
-            usable in a subsequent call to the <see cref="M:System.Data.SQLite.SQLiteConnection.Open" /> method.
             </returns>
         </member>
         <member name="M:System.Data.SQLite.SQLiteConnection.Dispose">
@@ -5382,40 +5337,6 @@
         </member>
         <member name="M:System.Data.SQLite.SQLiteConnection.LogMessage(System.Int32,System.String)">
             Add a log message via the SQLite sqlite3_log interface.
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteConnection.ChangePassword(System.String)">
-            <summary>
-            Change the password (or assign a password) to an open database.
-            </summary>
-            <remarks>
-            No readers or writers may be active for this process.  The database must already be open
-            and if it already was password protected, the existing password must already have been supplied.
-            </remarks>
-            <param name="newPassword">The new password to assign to the database</param>
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteConnection.ChangePassword(System.Byte[])">
-            <summary>
-            Change the password (or assign a password) to an open database.
-            </summary>
-            <remarks>
-            No readers or writers may be active for this process.  The database must already be open
-            and if it already was password protected, the existing password must already have been supplied.
-            </remarks>
-            <param name="newPassword">The new password to assign to the database</param>
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteConnection.SetPassword(System.String)">
-            <summary>
-            Sets the password for a password-protected database.  A password-protected database is
-            unusable for any operation until the password has been set.
-            </summary>
-            <param name="databasePassword">The password for the database</param>
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteConnection.SetPassword(System.Byte[])">
-            <summary>
-            Sets the password for a password-protected database.  A password-protected database is
-            unusable for any operation until the password has been set.
-            </summary>
-            <param name="databasePassword">The password for the database</param>
         </member>
         <member name="M:System.Data.SQLite.SQLiteConnection.SetAvRetry(System.Int32@,System.Int32@)">
             <summary>
@@ -9313,11 +9234,6 @@
         <member name="F:System.Data.SQLite.SQLiteErrorCode.Constraint_DataType">
             <summary>
             Value does not conform to specified data type.
-            </summary>
-        </member>
-        <member name="F:System.Data.SQLite.SQLiteErrorCode.Misuse_No_License">
-            <summary>
-            Method called without an appropriate license.
             </summary>
         </member>
         <member name="F:System.Data.SQLite.SQLiteErrorCode.Notice_Recover_Wal">
