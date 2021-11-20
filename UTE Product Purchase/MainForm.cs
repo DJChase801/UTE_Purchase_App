@@ -253,5 +253,15 @@ namespace UTE_Product_Purchase
 
             }
         }
+        // Detect all numeric characters at the form level and consume 1,4, and 7.
+        // Form.KeyPreview must be set to true for this event handler to be called.
+        void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar.ToString() == "`")
+            {
+                e.Handled = true;
+                scanTextBox.Focus(); 
+            }
+        }
     }
 }

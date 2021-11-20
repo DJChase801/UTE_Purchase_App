@@ -59,3 +59,45 @@ C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Memory.xml
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\UteDataBase.db
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\UTE Product Purchase.exe.config
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\UTE Product Purchase.exe.manifest
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\UTE Product Purchase.application
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\UTE Product Purchase.exe
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\UTE Product Purchase.pdb
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\Dapper.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\EntityFramework.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Buffers.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Memory.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\Dapper.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\EntityFramework.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Buffers.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Data.SQLite.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Memory.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.AssemblyReference.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.AdminStart.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.MainForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.ProductControl.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.ProductsForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.Properties.Resources.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE_Product_Purchase.PurchasesForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.GenerateResource.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.CoreCompileInputs.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.TrustInfo.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.exe.manifest
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.application
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.csproj.CopyComplete
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.exe
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Debug\UTE Product Purchase.pdb

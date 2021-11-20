@@ -59,3 +59,45 @@ C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Releas
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\System.Data.SQLite.Linq.dll
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\EntityFramework.xml
 C:\Users\danch\source\repos\UTE Product Purchase\UTE Product Purchase\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\UteDataBase.db
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\UTE Product Purchase.exe.config
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\UTE Product Purchase.exe.manifest
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\UTE Product Purchase.application
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\UTE Product Purchase.exe
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\UTE Product Purchase.pdb
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\Dapper.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\EntityFramework.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\Microsoft.Data.Sqlite.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\SQLitePCLRaw.core.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Buffers.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Data.SQLite.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Memory.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\Dapper.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\EntityFramework.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\Microsoft.Data.Sqlite.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Buffers.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Data.SQLite.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Memory.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.AssemblyReference.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE_Product_Purchase.AdminStart.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE_Product_Purchase.MainForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE_Product_Purchase.ProductControl.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE_Product_Purchase.ProductsForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE_Product_Purchase.Properties.Resources.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE_Product_Purchase.PurchasesForm.resources
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.GenerateResource.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.CoreCompileInputs.cache
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.TrustInfo.xml
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.exe.manifest
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.application
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.csproj.CopyComplete
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.exe
+C:\Users\Ute\Source\Repos\UTE_Purchase_App\UTE Product Purchase\obj\Release\UTE Product Purchase.pdb
