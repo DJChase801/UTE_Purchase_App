@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\UTE Product Purchase"
   ],
-  "SelectedNode": "\\UTE Product Purchase.sln",
+  "SelectedNode": "\\UTE Product Purchase\\SqliteDataAccess.cs",
   "PreviewInSolutionExplorer": false
 }

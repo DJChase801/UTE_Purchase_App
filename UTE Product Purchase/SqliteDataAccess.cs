@@ -7,8 +7,7 @@ using System.Data.SQLite;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace UTE_Product_Purchase
 {
@@ -66,6 +65,21 @@ namespace UTE_Product_Purchase
                     " values (@MemberName, @ProductName, @Date)", purchase);
             }
         }
+        public static void SavePurchaseLT(PurchaseModel purchase, DateTime endDate)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                DateTime dt; 
+                DateTime.TryParse(purchase.Date, out dt);
+                if (dt < endDate.AddDays(1).Subtract(endDate.TimeOfDay))
+                {
+                    cnn.Execute("insert into Purchase_LT (MemberName, ProductName, Date)" +
+                    " values (@MemberName, @ProductName, @Date)", purchase);
+
+                    cnn.Execute("Delete From Purchase Where MemberName = @MemberName AND Date = @Date AND Id = @Id", purchase); 
+                }
+            }
+        }
         /// <summary>
         /// Returns all the purchases data for current month to current day.
         /// </summary>
@@ -109,6 +123,29 @@ namespace UTE_Product_Purchase
             return ConfigurationManager.ConnectionStrings[id].ConnectionString; 
         }
 
-        
+        public static string LatestChargeDate()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var outputs = cnn.Query<PurchaseModel>("Select * from Purchase"
+                    , new DynamicParameters());
+
+                outputs = (from outRecs in outputs
+                           orderby outRecs.Id descending
+                           select outRecs).ToList();
+
+                MessageBox.Show(outputs[0].Name.ToString());
+
+                string latestDate = outputs.ToString();
+                if(latestDate != null)
+                {
+                    return latestDate;
+                }
+                else
+                {
+                    return " "; 
+                }
+            }
+        }
     }
 }

@@ -44,6 +44,8 @@ namespace UTE_Product_Purchase
             this.getPurchasesBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.setChargeDateBtn = new System.Windows.Forms.Button();
+            this.lastChargeLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.totalGridView)).BeginInit();
             this.SuspendLayout();
@@ -187,12 +189,42 @@ namespace UTE_Product_Purchase
             this.label4.TabIndex = 28;
             this.label4.Text = "End Date:";
             // 
+            // setChargeDateBtn
+            // 
+            this.setChargeDateBtn.AutoSize = true;
+            this.setChargeDateBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.setChargeDateBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.setChargeDateBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.setChargeDateBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.setChargeDateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.setChargeDateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.setChargeDateBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.setChargeDateBtn.Location = new System.Drawing.Point(12, 670);
+            this.setChargeDateBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.setChargeDateBtn.Name = "setChargeDateBtn";
+            this.setChargeDateBtn.Size = new System.Drawing.Size(96, 25);
+            this.setChargeDateBtn.TabIndex = 29;
+            this.setChargeDateBtn.Text = "Set Charge Date";
+            this.setChargeDateBtn.UseVisualStyleBackColor = false;
+            this.setChargeDateBtn.Click += new System.EventHandler(this.setChargeDateBtn_Click);
+            // 
+            // lastChargeLbl
+            // 
+            this.lastChargeLbl.AutoSize = true;
+            this.lastChargeLbl.Location = new System.Drawing.Point(113, 675);
+            this.lastChargeLbl.Name = "lastChargeLbl";
+            this.lastChargeLbl.Size = new System.Drawing.Size(70, 13);
+            this.lastChargeLbl.TabIndex = 30;
+            this.lastChargeLbl.Text = "Last Charge: ";
+            // 
             // PurchasesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(800, 709);
+            this.Controls.Add(this.lastChargeLbl);
+            this.Controls.Add(this.setChargeDateBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.getPurchasesBtn);
@@ -228,5 +260,7 @@ namespace UTE_Product_Purchase
         private System.Windows.Forms.Button getPurchasesBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button setChargeDateBtn;
+        private System.Windows.Forms.Label lastChargeLbl;
     }
 }

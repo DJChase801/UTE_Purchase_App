@@ -22,21 +22,20 @@ namespace UTE_Product_Purchase
         /// <param name="e"></param>
         private void addProductBtn_Click(object sender, EventArgs e)
         {
-            if (nameInputTb.Text != "" && priceInputTb.Text != "")
+            if (nameInputTb.Text != "" && priceInputTb.Text != "" && inputPicBox.Image != null)
             {
-                AddProductControl(nameInputTb.Text, priceInputTb.Text.Replace("$", ""), inputPicBox.Image, upcTextBox.Text);
-                SaveProduct(nameInputTb.Text, priceInputTb.Text.Replace("$", ""), inputPicBox.Image, upcTextBox.Text);
+                AddProductControl(nameInputTb.Text, priceInputTb.Text.Replace("$", ""), inputPicBox.Image, upcTextBox.Text.Replace("`", ""));
+                SaveProduct(nameInputTb.Text, priceInputTb.Text.Replace("$", ""), inputPicBox.Image, upcTextBox.Text.Replace("`", ""));
                 MainForm.LoadValues(); 
 
                 //Resets the form. 
                 nameInputTb.Text = "";
                 priceInputTb.Text = "";
                 upcTextBox.Text = ""; 
-                inputPicBox.Image = null; 
             }
             else
             {
-                MessageBox.Show("You must enter a Name and Price");
+                MessageBox.Show("You must enter a Name, Price and Image");
             }
         }
         /// <summary>
